@@ -1,0 +1,730 @@
+<?xml version="1.0" ?>
+<ExplanatoryNote xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="explanatorynote-01-03.xsd" SchemaVersion="01.03">
+    <ExplanatoryNoteNumber>1520/23-ПЗ</ExplanatoryNoteNumber>
+    <ExplanatoryNoteYear>2024</ExplanatoryNoteYear>
+    <ExplanatoryNoteModifications>
+        <Modification>
+            <ModificationNumber>1</ModificationNumber>
+            <ModificationDate>2024-05-08</ModificationDate>
+            <ModificationNote>Дополнен перечень ИРД, скорректирован состав проекта</ModificationNote>
+        </Modification>
+        <Modification>
+            <ModificationNumber>2</ModificationNumber>
+            <ModificationDate>2024-05-27</ModificationDate>
+            <ModificationNote>Состав проекта с учетом внесенных изменений</ModificationNote>
+        </Modification>
+    </ExplanatoryNoteModifications>
+    <IssueAuthor>
+        <Organization>
+            <OrgFullName>ООО "Зодчий"</OrgFullName>
+            <OrgOGRN>1071841000450</OrgOGRN>
+            <OrgINN>1835075576</OrgINN>
+            <OrgKPP>770201001</OrgKPP>
+            <Address>
+                <Country>Российская Федерация</Country>
+                <Region>77</Region>
+                <City>Москва</City>
+                <Settlement>Москва</Settlement>
+                <Street>М. Сухаревская пл.</Street>
+                <Building>3</Building>
+                <Room>III, к.1</Room>
+            </Address>
+            <Email>zodchiy18@bk.ru</Email>
+        </Organization>
+        <SROMembership>
+            <SRO SROType="Саморегулируемая организация в области архитектурно-строительного проектирования">Ассоциация проектировщиков «СтройОбъединение»</SRO>
+        </SROMembership>
+    </IssueAuthor>
+    <Signers>
+        <Signer engineeringRegistry="нет" constructionRegistry="нет">
+            <FamilyName>Наговицын</FamilyName>
+            <FirstName>Дмитрий</FirstName>
+            <SecondName>Викторович</SecondName>
+            <Position>Генеральный директор</Position>
+        </Signer>
+        <Signer engineeringRegistry="да" constructionRegistry="да">
+            <FamilyName>Верещагина</FamilyName>
+            <FirstName>Татьяна</FirstName>
+            <SecondName>Григорьевна</SecondName>
+            <Position>Гл.инженер проекта</Position>
+        </Signer>
+    </Signers>
+    <Developer>
+        <Organization>
+            <OrgFullName>ООО Специализированный Застройщик «Рентек-4»</OrgFullName>
+            <OrgOGRN>1191832018685</OrgOGRN>
+            <OrgINN>1841088407</OrgINN>
+            <OrgKPP>184101001</OrgKPP>
+            <Address>
+                <Country>Российская Федерация</Country>
+                <Region>18</Region>
+                <City>Ижевск</City>
+                <Street>ул. Ленина</Street>
+                <Building>100а</Building>
+                <Room>7</Room>
+            </Address>
+            <Email>89120156647@rentec.ru</Email>
+        </Organization>
+    </Developer>
+    <UsedNorms>
+        <UsedNorm>СП 15.13330.2012 "СНиП II-22-81* "Каменные и армокаменные конструкции"</UsedNorm>
+        <UsedNorm>СП 16.13330.2017 "СНиП II-23-81* "Стальные конструкции"</UsedNorm>
+        <UsedNorm>СП 17.13330.2017 "СНиП II-26-76 "Кровли"</UsedNorm>
+        <UsedNorm>СП 22.13330.2016 "СНиП 2.02.01-83* "Основания зданий и сооружений"</UsedNorm>
+        <UsedNorm>СП 29.13330.2011 "СНиП 2.03.13-88 "Полы"</UsedNorm>
+        <UsedNorm>СП 30.13330.2016 "СНиП 2.04.01-85* "Внутренний водопровод и канализация зданий"</UsedNorm>
+        <UsedNorm>СП 31.13330.2012 "СНиП 2.04.02-84* "Водоснабжение. Наружные сети и сооружения"</UsedNorm>
+        <UsedNorm>СП 32.13330.2018 "СНиП 2.04.03-85 "Канализация. Наружные сети и сооружения"</UsedNorm>
+        <UsedNorm>СП 34.13330.2012 "СНиП 2.05.02-85* "Автомобильные дороги"</UsedNorm>
+        <UsedNorm>СП 42.13330.2016 "СНиП 2.07.01-89* "Градостроительство. Планировка и застройка городских и сельских поселений"</UsedNorm>
+        <UsedNorm>СП 50.13330.2012 "СНиП 23-02-2003 "Тепловая защита зданий"</UsedNorm>
+        <UsedNorm>СП 51.13330.2011 "СНиП 23-03-2003 "Защита от шума"</UsedNorm>
+        <UsedNorm>СП 52.13330.2016 "СНиП 23-05-95* "Естественное и искусственное освещение"</UsedNorm>
+        <UsedNorm>СП 54.13330.2016 "СНиП 31-01-2003 "Здания жилые многоквартирные"</UsedNorm>
+        <UsedNorm>СП 60.13330.2016 "СНиП 41-01-2003 "Отопление, вентиляция и кондиционирование воздуха"</UsedNorm>
+        <UsedNorm>СП 61.13330.2012 "СНиП 41-03-2003 "Тепловая изоляция оборудования и трубопроводов"</UsedNorm>
+        <UsedNorm>СП 63.13330.2018 "СНиП 52-01-2003 "Бетонные и железобетонные конструкции. Основные положения"</UsedNorm>
+        <UsedNorm>СП 70.13330.2012 "СНиП 3.03.01-87 "Несущие и ограждающие конструкции"</UsedNorm>
+        <UsedNorm>СП 118.13330.2022 "СНиП 31-06-2009 "Общественные здания и сооружения"</UsedNorm>
+    </UsedNorms>
+    <ProjectDecisionDocuments>
+        <Document>
+            <DocType>05.03</DocType>
+            <DocName>Задание на проектирование</DocName>
+            <DocNumber>приложение №1 к Договору №ВШ23-2/П</DocNumber>
+            <DocDate>2023-04-12</DocDate>
+            <DocIssueAuthor>ООО СЗ «Рентек-4»</DocIssueAuthor>
+            <File>
+                <FileName>ааабеее.xml</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>5272D404</FileChecksum>
+                <SignFile>
+                    <FileName>Задание на проектирование.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>026F9BE2</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+    </ProjectDecisionDocuments>
+    <ProjectInitialDocuments>
+        <Document>
+            <DocType>03.02</DocType>
+            <DocName>Градостроительный план земельного участка</DocName>
+            <DocNumber>РФ-18-3-26-0-00-2023-1044-0</DocNumber>
+            <DocDate>2023-10-23</DocDate>
+            <DocIssueAuthor>ГУАиГ Администрации города Ижевска</DocIssueAuthor>
+            <File>
+                <FileName>ГПЗУ.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>246E5267</FileChecksum>
+                <SignFile>
+                    <FileName>ГПЗУ.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>45B0A632</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+        <Document>
+            <DocType>04.01</DocType>
+            <DocName>Технические условия для присоединения к электрическим сетям к Дополнительному соглашению</DocName>
+            <DocNumber>1 к Договору №ТП-280721 от 28.07.2021</DocNumber>
+            <DocDate>2023-10-09</DocDate>
+            <DocIssueAuthor>ООО «Горэлектросеть»</DocIssueAuthor>
+            <File>
+                <FileName>ТУ на ЭЛ.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>5EF5170F</FileChecksum>
+                <SignFile>
+                    <FileName>ТУ на ЭЛ.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>24AD96A3</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+        <Document>
+            <DocType>04.01</DocType>
+            <DocName>Технические условия подключения (технологического присоединения) к централизованной системе холодного водоснабжения</DocName>
+            <DocNumber>197В</DocNumber>
+            <DocDate>2023-09-26</DocDate>
+            <DocIssueAuthor>МУП г. Ижевска «Ижводоканал»</DocIssueAuthor>
+            <File>
+                <FileName>ТУ на Воду.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>00DC60C2</FileChecksum>
+                <SignFile>
+                    <FileName>ТУ на Воду.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>1CB396A9</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+        <Document>
+            <DocType>04.01</DocType>
+            <DocName>Технические условия подключения (технологического присоединения) к централизованной системе водоотведения</DocName>
+            <DocNumber>198К</DocNumber>
+            <DocDate>2023-09-26</DocDate>
+            <DocIssueAuthor>МУП г. Ижевска «Ижводоканал»</DocIssueAuthor>
+            <File>
+                <FileName>ТУ на Канализацию.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>117D98BA</FileChecksum>
+                <SignFile>
+                    <FileName>ТУ на Канализацию.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>60118F74</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+        <Document>
+            <DocType>04.01</DocType>
+            <DocName>Письмо о гарантированном напоре в водопроводных сетях</DocName>
+            <DocNumber>18964/17-15-127</DocNumber>
+            <DocDate>2023-11-29</DocDate>
+            <DocIssueAuthor>МУП г. Ижевска «Ижводоканал»</DocIssueAuthor>
+            <File>
+                <FileName>Письмо о гарант.напоре.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>0BAD3D96</FileChecksum>
+                <SignFile>
+                    <FileName>Письмо о гарант.напоре.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>8168A738</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+        <Document>
+            <DocType>04.01</DocType>
+            <DocName>Технические условия на согласование отведения поверхностных стоков в существующий коллектор</DocName>
+            <DocNumber>11627/07-03</DocNumber>
+            <DocDate>2023-10-18</DocDate>
+            <DocIssueAuthor>МКУ г. Ижевска «Служба благоустройства и дорожного хозяйства»</DocIssueAuthor>
+            <File>
+                <FileName>ТУ на Ливневку.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>0CA01A51</FileChecksum>
+                <SignFile>
+                    <FileName>ТУ на Ливневку.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>B9F97B33</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+        <Document>
+            <DocType>04.01</DocType>
+            <DocName>Технические условия на присоединение к сети связи с набором телекоммуникационных услуг</DocName>
+            <DocNumber>1312</DocNumber>
+            <DocDate>2023-10-03</DocDate>
+            <DocIssueAuthor>ООО «ТК «Марк-ИТТ»</DocIssueAuthor>
+            <File>
+                <FileName>ТУ на СС.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>01847B23</FileChecksum>
+                <SignFile>
+                    <FileName>ТУ на СС.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>759D6C6A</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+        <Document>
+            <DocType>04.01</DocType>
+            <DocName>Технические условия о подключении к системе теплоснабжения к Договору</DocName>
+            <DocNumber>7G00-FA 035/01-013/0025-2021</DocNumber>
+            <DocDate>2021-11-09</DocDate>
+            <DocIssueAuthor>ПАО «Т Плюс»</DocIssueAuthor>
+            <File>
+                <FileName>ТУ на ТС.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>D615CF49</FileChecksum>
+                <SignFile>
+                    <FileName>ТУ на ТС.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>ED5B8653</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+        <Document>
+            <DocType>04.01</DocType>
+            <DocName>Технические условия на диспетчеризацию лифтов</DocName>
+            <DocNumber>б/н</DocNumber>
+            <DocDate>2023-09-21</DocDate>
+            <DocIssueAuthor>ООО «Альтер-лифт»</DocIssueAuthor>
+            <File>
+                <FileName>ТУ на Лифт.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>E0DDEDF2</FileChecksum>
+                <SignFile>
+                    <FileName>ТУ на Лифт.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>DDCF2929</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+        <Document>
+            <DocType>03.99</DocType>
+            <DocName>Соглашение об установлении сервитута</DocName>
+            <DocNumber>1224оу</DocNumber>
+            <DocDate>2024-04-01</DocDate>
+            <DocIssueAuthor>Министерство имущественных отношений УР</DocIssueAuthor>
+            <File>
+                <FileName>Сервитут.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>F8616894</FileChecksum>
+                <SignFile>
+                    <FileName>Сервитут.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>A7279534</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+        <Document>
+            <DocType>99.99</DocType>
+            <DocName>Согласование размещения парковок</DocName>
+            <DocNumber>06-РИ</DocNumber>
+            <DocDate>2024-04-27</DocDate>
+            <DocIssueAuthor>ООО "Рентек Инвест"</DocIssueAuthor>
+            <File>
+                <FileName>Согласование размещения парковок.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>AAEE35E7</FileChecksum>
+                <SignFile>
+                    <FileName>Согласование размещения парковок.pdf.sig</FileName>
+                    <FileFormat>sig</FileFormat>
+                    <FileChecksum>9D87AA94</FileChecksum>
+                </SignFile>
+            </File>
+        </Document>
+    </ProjectInitialDocuments>
+    <EngineeringSurveyDocuments>
+        <Document>
+            <DocType>06.02</DocType>
+            <DocName>Технический отчет по инженерно-геологическим изысканиям</DocName>
+            <DocNumber>ИГИ-0823-310</DocNumber>
+            <DocDate>2024-02-14</DocDate>
+            <FullDocIssueAuthor>
+                <Organization>
+                    <OrgFullName>ООО "Дельтатех"</OrgFullName>
+                    <OrgOGRN>1191832018344</OrgOGRN>
+                    <OrgINN>1840090756</OrgINN>
+                    <OrgKPP>184101001</OrgKPP>
+                    <Address>
+                        <Country>Россия</Country>
+                        <Region>18</Region>
+                        <City>Ижевск</City>
+                        <Street>Карла Либкнехта</Street>
+                        <Building>78</Building>
+                        <Room>80</Room>
+                    </Address>
+                    <Email>univlad@mail.ru</Email>
+                </Organization>
+                <SROMembership>
+                    <SRO SROType="Саморегулируемая организация в области инженерных изысканий">СРО-И-036-18122012</SRO>
+                </SROMembership>
+            </FullDocIssueAuthor>
+            <File>
+                <FileName>ИГИ-0823-310.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>A0C5571D</FileChecksum>
+            </File>
+        </Document>
+        <Document>
+            <DocType>06.01</DocType>
+            <DocName>Технический отчет по инженерно-геодезическим изысканиям</DocName>
+            <DocNumber>ИГДИ-0823-309</DocNumber>
+            <DocDate>2023-12-03</DocDate>
+            <FullDocIssueAuthor>
+                <Organization>
+                    <OrgFullName>ООО "Дельтатех"</OrgFullName>
+                    <OrgOGRN>1191832018344</OrgOGRN>
+                    <OrgINN>1840090756</OrgINN>
+                    <OrgKPP>184101001</OrgKPP>
+                    <Address>
+                        <Country>Россия</Country>
+                        <Region>18</Region>
+                        <City>Ижевск</City>
+                        <Street>Карла Либкнехта</Street>
+                        <Building>78</Building>
+                        <Room>80</Room>
+                    </Address>
+                    <Email>univlad@mail.ru</Email>
+                </Organization>
+                <SROMembership>
+                    <SRO SROType="Саморегулируемая организация в области инженерных изысканий">СРО-И-036-18122012</SRO>
+                </SROMembership>
+            </FullDocIssueAuthor>
+            <File>
+                <FileName>ИГДИ-0823-309.pdf</FileName>
+                <FileFormat>pdf</FileFormat>
+                <FileChecksum>D8CFC341</FileChecksum>
+            </File>
+        </Document>
+    </EngineeringSurveyDocuments>
+    <NonIndustrialObject ObjectID="k_4gyVfj" Placement="1">
+        <Name>Комплекс многоквартирных жилых домов на земельном участке с кадастровым №18:26:020022:23 в Индустриальном районе г. Ижевска. Жилой дом №2</Name>
+        <ConstructionType>1</ConstructionType>
+        <ConstructionDuration>24</ConstructionDuration>
+        <Address>
+            <Country>Российская Федерация</Country>
+            <Region>18</Region>
+            <City>Ижевск</City>
+            <Street>ул. Кунгурцева Е.М.</Street>
+            <Note>земельный участок 45</Note>
+        </Address>
+        <Functions>
+            <FunctionsNote>Многоквартирный жилой дом со встроенными помещениями общественного назначения</FunctionsNote>
+            <FunctionsClass>01.02.001</FunctionsClass>
+        </Functions>
+        <FunctionsFeatures>
+            <Text>Не принадлежит</Text>
+        </FunctionsFeatures>
+        <PowerIndicator>
+            <Name>Количество квартир</Name>
+            <Measure>796</Measure>
+            <Value>275</Value>
+        </PowerIndicator>
+        <TEI>
+            <Name>Площадь жилого дома</Name>
+            <Measure>055</Measure>
+            <Value>21 054,54</Value>
+        </TEI>
+        <TEI>
+            <Name>Площадь застройки</Name>
+            <Measure>055</Measure>
+            <Value>2 101,79</Value>
+        </TEI>
+        <TEI>
+            <Name>Этажность</Name>
+            <Measure>796</Measure>
+            <Value>17/10</Value>
+        </TEI>
+        <TEI>
+            <Name>Строительный объем</Name>
+            <Measure>113</Measure>
+            <Value>77 931,04</Value>
+        </TEI>
+        <EnergyEfficiency>
+            <EnergyEfficiencyClass>B</EnergyEfficiencyClass>
+        </EnergyEfficiency>
+        <FireDangerCategory>Категория не устанавливается</FireDangerCategory>
+        <PeoplePermanentStay>
+            <Text>имеются</Text>
+        </PeoplePermanentStay>
+        <ResponsibilityLevel>нормальный</ResponsibilityLevel>
+        <ClimateConditions>
+            <ClimateNote>
+                <Text>Территория работ расположена в восточной части Русской платформы и приурочена к Вятско-Камской возвышенности. В тектоническом отношении участок находится в северо-восточной части отрицательной структуры – ВерхнеКамской впадины, осложненной рядом дислокаций осадочного чехла.
+В геологическом строении приповерхностной части площадки изысканий по данным инженерно-геологического бурения до глубины 25 м принимают участие почвенно-растительный слой (pQ), делювиальные суглинки (dQ), и среднепермские глины (P2), в кровле элювиальные (eP2) глины и пески.
+Нормативная глубина промерзания суглинков и глин, согласно теплотехническим расчетам, составляет 1,56 м, песков пылеватых 1,90 м
+По степени морозоопасности грунты, развитые на изыскиваемых участках, характеризуются следующим образом:
+ИГЭ 1 – глина слабопучинистая; ИГЭ 2 – глина слабопучинистая; ИГЭ 3 – песок слабопучинистый; ИГЭ 4 – глина сильнопучинистая.
+На территории изыскиваемой площадки до глубины 25,0 м вскрыт один выдержанный водоносный горизонт. По характеру питания и типу залегания подземные воды являются грунтовыми, напорными. Уровень грунтовых вод встретился на глубине 6,1-6,7 м и установился на глубине 2,9-4,0 м (абс. отм. 158,6-159,0 м). Питание горизонта осуществляется за счет инфильтрации атмосферных осадков. Уклон направлен на запад, в сторону русла р. Карлутка. Областью разгрузки является р. Карлутка.
+По химическому составу воды хлоридно-гидрокарбонатно-натриевые с минерализацией 0,892 г/дм3. Согласно химическим анализам вода неагрессивная к бетонам марки W4-W8 и выше. Степень агрессивности воды к арматуре железобетонных конструкций при периодическом смачивании – неагрессивная, при постоянном погружении – неагрессивная. Степень агрессивности воды к металлическим конструкциям – среднеагрессивная. Коррозионная активность воды по отношению к свинцовой оболочке кабеля – низкая, к алюминиевой оболочке кабеля – высокая.
+На рассматриваемой территории к специфическим грунтам относятся элювиальные (eP2) глины ИГЭ 1, 2 и пески ИГЭ 3.
+По критериям типизации по подтопляемости в соответствии с приложением И СП 11-105-97, ч. II изыскиваемая территория относится к категории I–А-1 – постоянно подтопленные.</Text>
+            </ClimateNote>
+            <DangerousNatureProcesses>
+                <Text>Согласно отчета по инженерно-геологическим изысканиям ИГИ-0823-310, выполненным ООО "Дельтатех", исследуемая территория характеризуется проявлением следующих инженерно-геологических процессов:
+− сейсмичность; 
+− подтопление.</Text>
+            </DangerousNatureProcesses>
+            <ClimateDistrict>IIВ</ClimateDistrict>
+            <GeologicalConditions>II</GeologicalConditions>
+            <WindDistrict>I</WindDistrict>
+            <SnowDistrict>V</SnowDistrict>
+            <SeismicActivity>5</SeismicActivity>
+        </ClimateConditions>
+        <Resources>
+            <Resource>
+                <Name>Общая электрическая нагрузка на шинах ТП-0,4кВ  жилой части</Name>
+                <Measure>214</Measure>
+                <Value>450,5</Value>
+            </Resource>
+            <Resource>
+                <Name>Расчетный расход воды на хоз-питьевые нужды</Name>
+                <Measure>599</Measure>
+                <Value>0,08527</Value>
+            </Resource>
+            <Resource>
+                <Name>Расход тепла</Name>
+                <Measure>215</Measure>
+                <Value>2,395</Value>
+            </Resource>
+        </Resources>
+        <LandCategory>2</LandCategory>
+        <LandInfo>
+            <CommonLandInfo>
+                <Text>На часть земельного участка с кадастровым номером 18:26:020022:185 в границах, указанных в выписке из ЕГРН №КУВИ-001/2024-77624148 от 18 марта 2024 г., соглашением №1224оу от 01.04.2024 г. между Министерством имущественных отношений УР и ООО СЗ "Рентек-4" установлен частный сервитут с целью обустройства и прокладки инженерных коммуникаций и проезда к смежному земельному участку с кадастровым номером 18:26:020022:23.</Text>
+            </CommonLandInfo>
+            <LandAreaInfo>
+                <CadastralNumber>18:26:020022:185</CadastralNumber>
+                <LandCategory>2</LandCategory>
+                <UsingNote>Адрес: Удмуртская Республика, город Ижевск, улица Кунгурцева Е.М., вид разрешенного использования: земли общего пользования, форма собственности: собственность публично-правовых образований</UsingNote>
+            </LandAreaInfo>
+        </LandInfo>
+        <ProjectDocumentation>
+            <Section2>
+                <Document>
+                    <DocName>Схема планировочной организации земельного участка</DocName>
+                    <DocNumber>1520/23-ПЗУ</DocNumber>
+                    <File>
+                        <FileName>Том 2. 1520-23-ПЗУ (изм.1).pdf</FileName>
+                        <FileFormat>pdf</FileFormat>
+                        <FileChecksum>1253DC56</FileChecksum>
+                        <SignFile>
+                            <FileName>Том 2. 1520-23-ПЗУ (изм.1).pdf.sig</FileName>
+                            <FileFormat>sig</FileFormat>
+                            <FileChecksum>C3F3872E</FileChecksum>
+                        </SignFile>
+                    </File>
+                </Document>
+            </Section2>
+            <Section3>
+                <Document>
+                    <DocName>Объемно-планировочные и архитектурные решения</DocName>
+                    <DocNumber>1520/23-АР</DocNumber>
+                    <File>
+                        <FileName>Том 3. 1520-23-АР (изм.1).pdf</FileName>
+                        <FileFormat>pdf</FileFormat>
+                        <FileChecksum>69CA1B89</FileChecksum>
+                        <SignFile>
+                            <FileName>Том 3. 1520-23-АР (изм.1).pdf.sig</FileName>
+                            <FileFormat>sig</FileFormat>
+                            <FileChecksum>F17A088E</FileChecksum>
+                        </SignFile>
+                    </File>
+                </Document>
+            </Section3>
+            <Section4>
+                <Document>
+                    <DocName>Конструкции железобетонные. Фундаменты</DocName>
+                    <DocNumber>1520/23-КР1</DocNumber>
+                    <File>
+                        <FileName>Том 4.1. 1520-23-КР1 (изм.1).pdf</FileName>
+                        <FileFormat>pdf</FileFormat>
+                        <FileChecksum>38D58B44</FileChecksum>
+                        <SignFile>
+                            <FileName>Том 4.1. 1520-23-КР1 (изм.1).pdf.sig</FileName>
+                            <FileFormat>sig</FileFormat>
+                            <FileChecksum>A6B66FBC</FileChecksum>
+                        </SignFile>
+                    </File>
+                </Document>
+                <Document>
+                    <DocName>Конструкции железобетонные. Каркас здания</DocName>
+                    <DocNumber>1520/23-КР2</DocNumber>
+                    <File>
+                        <FileName>Том 4.2. 1520-23-КР2.pdf</FileName>
+                        <FileFormat>pdf</FileFormat>
+                        <FileChecksum>F68EBE4A</FileChecksum>
+                        <SignFile>
+                            <FileName>Том 4.2. 1520-23-КР2.pdf.sig</FileName>
+                            <FileFormat>sig</FileFormat>
+                            <FileChecksum>A6EA708D</FileChecksum>
+                        </SignFile>
+                    </File>
+                </Document>
+                <Document>
+                    <DocName>Конструктивные и объёмно-планировочные решения</DocName>
+                    <DocNumber>1520/23-КР3</DocNumber>
+                    <File>
+                        <FileName>Том 4.3. 1520-23-КР3 (изм.1).pdf</FileName>
+                        <FileFormat>pdf</FileFormat>
+                        <FileChecksum>A1F7E481</FileChecksum>
+                        <SignFile>
+                            <FileName>Том 4.3. 1520-23-КР3 (изм.1).pdf.sig</FileName>
+                            <FileFormat>sig</FileFormat>
+                            <FileChecksum>FC51F1F4</FileChecksum>
+                        </SignFile>
+                    </File>
+                </Document>
+            </Section4>
+            <Section5>
+                <ElectricitySupply>
+                    <Document>
+                        <DocName>Система электроснабжения</DocName>
+                        <DocNumber>1520/23-ИОС1</DocNumber>
+                        <File>
+                            <FileName>Том 5.1. 1520-23-ИОС1 (изм.2).pdf</FileName>
+                            <FileFormat>pdf</FileFormat>
+                            <FileChecksum>8693ADCA</FileChecksum>
+                            <SignFile>
+                                <FileName>Том 5.1. 1520-23-ИОС1 (изм.2).pdf.sig</FileName>
+                                <FileFormat>sig</FileFormat>
+                                <FileChecksum>A24820B8</FileChecksum>
+                            </SignFile>
+                        </File>
+                    </Document>
+                </ElectricitySupply>
+                <WaterSupply>
+                    <Document>
+                        <DocName>Система водоснабжения</DocName>
+                        <DocNumber>1520/23-ИОС2</DocNumber>
+                        <File>
+                            <FileName>Том 5.2. 1520-23-ИОС2 (изм.1).pdf</FileName>
+                            <FileFormat>pdf</FileFormat>
+                            <FileChecksum>462523A2</FileChecksum>
+                            <SignFile>
+                                <FileName>Том 5.2. 1520-23-ИОС2 (изм.1).pdf.sig</FileName>
+                                <FileFormat>sig</FileFormat>
+                                <FileChecksum>F18A062A</FileChecksum>
+                            </SignFile>
+                        </File>
+                    </Document>
+                </WaterSupply>
+                <WaterRemoval>
+                    <Document>
+                        <DocName>Система водоотведения</DocName>
+                        <DocNumber>1520/23-ИОС3</DocNumber>
+                        <File>
+                            <FileName>Том 5.3. 1520-23-ИОС3 (изм.1).pdf</FileName>
+                            <FileFormat>pdf</FileFormat>
+                            <FileChecksum>37F93999</FileChecksum>
+                            <SignFile>
+                                <FileName>Том 5.3. 1520-23-ИОС3 (изм.1).pdf.sig</FileName>
+                                <FileFormat>sig</FileFormat>
+                                <FileChecksum>8EAE1832</FileChecksum>
+                            </SignFile>
+                        </File>
+                    </Document>
+                </WaterRemoval>
+                <HeatingVentilation>
+                    <Document>
+                        <DocName>Система отопления</DocName>
+                        <DocNumber>1520/23-ИОС4.1</DocNumber>
+                        <File>
+                            <FileName>Том 5.4.1. 1520-23-ИОС4.1 (изм.1).pdf</FileName>
+                            <FileFormat>pdf</FileFormat>
+                            <FileChecksum>F895B46D</FileChecksum>
+                            <SignFile>
+                                <FileName>Том 5.4.1. 1520-23-ИОС4.1 (изм.1).pdf.sig</FileName>
+                                <FileFormat>sig</FileFormat>
+                                <FileChecksum>6665811E</FileChecksum>
+                            </SignFile>
+                        </File>
+                    </Document>
+                    <Document>
+                        <DocName>Система вентиляции</DocName>
+                        <DocNumber>1520/23-ИОС4.2</DocNumber>
+                        <File>
+                            <FileName>Том 5.4.2. 1520-23-ИОС4.2 (изм.1).pdf</FileName>
+                            <FileFormat>pdf</FileFormat>
+                            <FileChecksum>F25675E9</FileChecksum>
+                            <SignFile>
+                                <FileName>Том 5.4.2. 1520-23-ИОС4.2 (изм.1).pdf.sig</FileName>
+                                <FileFormat>sig</FileFormat>
+                                <FileChecksum>5AA95ECD</FileChecksum>
+                            </SignFile>
+                        </File>
+                    </Document>
+                </HeatingVentilation>
+                <Communication>
+                    <Document>
+                        <DocName>Сети связи</DocName>
+                        <DocNumber>1520/23-ИОС5</DocNumber>
+                        <File>
+                            <FileName>Том 5.5. 1520-23-ИОС5 (изм.1).pdf</FileName>
+                            <FileFormat>pdf</FileFormat>
+                            <FileChecksum>D3A10609</FileChecksum>
+                            <SignFile>
+                                <FileName>Том 5.5. 1520-23-ИОС5 (изм.1).pdf.sig</FileName>
+                                <FileFormat>sig</FileFormat>
+                                <FileChecksum>8E6862EC</FileChecksum>
+                            </SignFile>
+                        </File>
+                    </Document>
+                </Communication>
+            </Section5>
+            <Section7>
+                <Document>
+                    <DocName>Проект организации строительства</DocName>
+                    <DocNumber>1520/23-ПОС</DocNumber>
+                    <File>
+                        <FileName>Том 7. 1520-23-ПОС (изм.1).pdf</FileName>
+                        <FileFormat>pdf</FileFormat>
+                        <FileChecksum>D99B7503</FileChecksum>
+                        <SignFile>
+                            <FileName>Том 7. 1520-23-ПОС (изм.1).pdf.sig</FileName>
+                            <FileFormat>sig</FileFormat>
+                            <FileChecksum>F85BDDCD</FileChecksum>
+                        </SignFile>
+                    </File>
+                </Document>
+            </Section7>
+            <Section8>
+                <Document>
+                    <DocName>Перечень мероприятий по охране окружающей среды</DocName>
+                    <DocNumber>1520/23-ООС</DocNumber>
+                    <File>
+                        <FileName>Том 8. 1520-23-ООС (изм.1).pdf</FileName>
+                        <FileFormat>pdf</FileFormat>
+                        <FileChecksum>5E5A78F1</FileChecksum>
+                        <SignFile>
+                            <FileName>Том 8. 1520-23-ООС (изм.1).pdf.sig</FileName>
+                            <FileFormat>sig</FileFormat>
+                            <FileChecksum>590CF8B2</FileChecksum>
+                        </SignFile>
+                    </File>
+                </Document>
+            </Section8>
+            <Section9>
+                <Document>
+                    <DocName>Мероприятия по обеспечению пожарной безопасности</DocName>
+                    <DocNumber>1520/23-ПБ</DocNumber>
+                    <File>
+                        <FileName>Том 9. 1520-23-ПБ (изм.1).pdf</FileName>
+                        <FileFormat>pdf</FileFormat>
+                        <FileChecksum>109EA86B</FileChecksum>
+                        <SignFile>
+                            <FileName>Том 9. 1520-23-ПБ (изм.1).pdf.sig</FileName>
+                            <FileFormat>sig</FileFormat>
+                            <FileChecksum>619F9EA1</FileChecksum>
+                        </SignFile>
+                    </File>
+                </Document>
+            </Section9>
+            <Section10>
+                <Document>
+                    <DocName>Требования к обеспечению безопасной эксплуатации объектов капитального строительства</DocName>
+                    <DocNumber>1520/23-ТБЭ</DocNumber>
+                    <File>
+                        <FileName>Том 10. 1520-23-ТБЭ.pdf</FileName>
+                        <FileFormat>pdf</FileFormat>
+                        <FileChecksum>8A580827</FileChecksum>
+                        <SignFile>
+                            <FileName>Том 10. 1520-23-ТБЭ.pdf.sig</FileName>
+                            <FileFormat>sig</FileFormat>
+                            <FileChecksum>3CDA4232</FileChecksum>
+                        </SignFile>
+                    </File>
+                </Document>
+            </Section10>
+            <Section11>
+                <Document>
+                    <DocName>Мероприятия по обеспечению доступа инвалидов</DocName>
+                    <DocNumber>1520/23-ОДИ</DocNumber>
+                    <File>
+                        <FileName>Том 11. 1520-23-ОДИ.pdf</FileName>
+                        <FileFormat>pdf</FileFormat>
+                        <FileChecksum>1B92CD7B</FileChecksum>
+                        <SignFile>
+                            <FileName>Том 11. 1520-23-ОДИ.pdf.sig</FileName>
+                            <FileFormat>sig</FileFormat>
+                            <FileChecksum>E487ACE0</FileChecksum>
+                        </SignFile>
+                    </File>
+                </Document>
+            </Section11>
+        </ProjectDocumentation>
+    </NonIndustrialObject>
+    <DesignerAssurance>
+        <Assurance>
+            <Text>Проектная документация разработана в соответствии с градостроительным планом земельного участка, заданием на проектирование, градостроительным регламентом, документами об использовании земельного участка для строительства (в случае если на земельный участок не распространяется действие градостроительного регламента или в отношении его не устанавливается градостроительный регламент), техническими регламентами, в том числе устанавливающими требования по обеспечению безопасной эксплуатации зданий, строений, сооружений и безопасного использования прилегающих к ним территорий, и с соблюдением технических условий</Text>
+        </Assurance>
+        <Signer>
+            <FamilyName>Верещагина</FamilyName>
+            <FirstName>Татьяна</FirstName>
+            <SecondName>Григорьевна</SecondName>
+            <Position>ГИП</Position>
+        </Signer>
+    </DesignerAssurance>
+</ExplanatoryNote>
