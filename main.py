@@ -7,43 +7,52 @@ ctk.set_appearance_mode("System")
 ctk.set_default_color_theme("blue")
 
 # =====================================================================
-# 🌍 СЛОВАРЬ ПЕРЕВОДОВ (ТОЛЬКО ДЛЯ ИНТЕРФЕЙСА)
+# 🌍 СЛОВАРЬ ПЕРЕВОДОВ (Для красивых названий полей)
 # =====================================================================
 TRANSLATION_DICT = {
-    # --- Вкладки (Корневые теги) ---
-    "ExplanatoryNoteNumber": "Шифр пояснительной записки",
-    "ExplanatoryNoteYear": "Год составления",
-    "GeneralInfo": "Общие сведения",
+    "ExplanatoryNoteNumber": "Номер ПЗ",
+    "ExplanatoryNoteYear": "Год выпуска",
+    "ExplanatoryNoteModifications": "Внесение изменений",
+    "IssueAuthor": "Авторы проекта",
+    "Signers": "Подписанты",
     "Developer": "Застройщик (Тех. заказчик)",
-    "Object": "Объект строительства",
+    "UsedNorms": "Используемые нормы",
+    "ProjectDecisionDocuments": "Проектные решения",
+    "ProjectInitialDocuments": "Исходно-разрешительные документы",
+    "EngineeringSurveyDocuments": "Отчеты по инженерным изысканиям",
     "NonIndustrialObject": "Непроизводственный объект",
     "IndustrialObject": "Производственный объект",
     "LinearObject": "Линейный объект",
-    "ProjectInitialDocuments": "Исходно-разрешительные документы",
-    
-    # --- Поля ---
+    "DesignerAssurance": "Заверения проектировщика",
     "DocumentName": "Наименование документа",
-    "DocumentDate": "Дата документа",
-    "DocumentNumber": "Номер документа",
     "OrganizationName": "Полное наименование организации",
     "INN": "ИНН",
-    "OGRN": "ОГРН",
-    "KPP": "КПП",
-    "ObjectName": "Наименование объекта",
-    "Address": "Почтовый адрес",
-    "BuiltUpArea": "Площадь застройки (кв.м)",
-    "TotalArea": "Общая площадь (кв.м)",
-    "BuildingVolume": "Строительный объем (куб.м)",
-    "Email": "Электронная почта"
-    # Добавляй сюда новые переводы по мере необходимости!
+    "OGRN": "ОГРН"
+}
+
+# =====================================================================
+# 🛠 ПРАВИЛА ОБЪЕДИНЕНИЯ ВКЛАДОК (Routing Rules)
+# =====================================================================
+CUSTOM_TAB_GROUPS = {
+    # Эти сложные теги пойдут во вкладку "Общие данные" (вместе с простыми полями)
+    "ExplanatoryNoteModifications": "📌 Общие данные",
+    
+    # Объединяем проектировщиков, авторов и подписантов
+    "IssueAuthor": "👷 Генеральный проектировщик",
+    "Signers": "👷 Генеральный проектировщик",
+    "DesignerAssurance": "👷 Генеральный проектировщик",
+    
+    # Объединяем документацию
+    "ProjectDecisionDocuments": "📑 Исходно-разрешительная документация",
+    "ProjectInitialDocuments": "📑 Исходно-разрешительная документация",
 }
 # =====================================================================
 
 class UniversalXMLGeneratorApp(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("XML Генератор (с русским интерфейсом)")
-        self.geometry("900x700")
+        self.title("XML Генератор (с умным объединением вкладок)")
+        self.geometry("900x750")
 
         self.xml_tree = None
         self.xml_root = None
@@ -51,7 +60,7 @@ class UniversalXMLGeneratorApp(ctk.CTk):
         
         self.tab_buttons = {} 
         self.tab_frames = {}  
-        self.active_tab_id = None # Теперь используем ID вкладки, а не текст
+        self.active_tab_id = None 
 
         self.setup_ui()
 
@@ -67,8 +76,7 @@ class UniversalXMLGeneratorApp(ctk.CTk):
         self.save_btn = ctk.CTkButton(
             self.top_frame, text="💾 2. Сохранить XML", 
             command=self.save_xml, fg_color="green", hover_color="darkgreen", state="disabled"
-        )
-        self.save_btn.pack(side="right", padx=5)
+        ).pack(side="right", padx=5)
 
         self.tab_bar_scroll = ctk.CTkScrollableFrame(self, orientation="horizontal", height=50, fg_color="transparent")
         self.tab_bar_scroll.pack(fill="x", padx=20, pady=(0, 10))
@@ -77,7 +85,6 @@ class UniversalXMLGeneratorApp(ctk.CTk):
         self.main_content_area.pack(fill="both", expand=True, padx=20, pady=(0, 20))
 
     def get_translation(self, tag):
-        """Функция-помощник: ищет перевод в словаре. Если нет - возвращает сам тег."""
         return TRANSLATION_DICT.get(tag, tag)
 
     def load_xml_template(self):
@@ -88,10 +95,27 @@ class UniversalXMLGeneratorApp(ctk.CTk):
             self.xml_tree = ET.parse(filepath)
             self.xml_root = self.xml_tree.getroot()
             self.rebuild_interface()
-            self.save_btn.configure(state="normal")
-            messagebox.showinfo("Успех", "Шаблон загружен, интерфейс переведен!")
+            # self.save_btn.configure(state="normal") # Кнопка пакуется сразу, так что её статус мы не меняем
+            messagebox.showinfo("Успех", "Шаблон загружен, вкладки объединены по вашим правилам!")
         except Exception as e:
             messagebox.showerror("Ошибка", f"Не удалось прочитать XML:\n{e}")
+
+    def create_tab(self, tab_id, display_name):
+        btn = ctk.CTkButton(
+            self.tab_bar_scroll, 
+            text=display_name, 
+            fg_color="transparent", 
+            text_color=("gray10", "gray90"),
+            border_width=2,
+            border_color=("gray70", "gray30"),
+            command=lambda t=tab_id: self.select_tab(t)
+        )
+        btn.pack(side="left", padx=5, pady=5)
+        self.tab_buttons[tab_id] = btn
+
+        content_frame = ctk.CTkScrollableFrame(self.main_content_area)
+        self.tab_frames[tab_id] = content_frame
+        return content_frame
 
     def rebuild_interface(self):
         for widget in self.tab_bar_scroll.winfo_children(): widget.destroy()
@@ -101,43 +125,69 @@ class UniversalXMLGeneratorApp(ctk.CTk):
         self.entry_mappings.clear()
         self.active_tab_id = None
 
+        # --- 1. Сбор и распределение тегов по вкладкам ---
+        tab_groups = {} # Словарь вида: {"Имя вкладки": [(тег, элемент), (тег, элемент)]}
+
+        for child in self.xml_root:
+            tag = child.tag
+            
+            # Определяем, в какую вкладку должен попасть этот тег
+            if tag in CUSTOM_TAB_GROUPS:
+                # Если тег есть в наших правилах объединения
+                target_tab = CUSTOM_TAB_GROUPS[tag]
+            elif len(child) == 0:
+                # Простые теги (без вложений) всегда идут в Общие данные
+                target_tab = "📌 Общие данные"
+            else:
+                # Все остальные сложные теги получают свою собственную вкладку
+                translated_name = self.get_translation(tag)
+                target_tab = f"📁 {translated_name}"
+
+            if target_tab not in tab_groups:
+                tab_groups[target_tab] = []
+            tab_groups[target_tab].append((tag, child))
+
+        # --- 2. Отрисовка интерфейса ---
         first_tab_id = None
 
-        for main_section in self.xml_root:
-            raw_tag = main_section.tag
-            translated_name = self.get_translation(raw_tag)
+        for tab_name, elements in tab_groups.items():
+            # Генерируем уникальный ID для вкладки (хэшируем имя, чтобы избежать ошибок)
+            tab_id = f"tab_{abs(hash(tab_name))}"
+            if first_tab_id is None: first_tab_id = tab_id
             
-            # Уникальный ID для вкладки (на случай двух одинаковых тегов)
-            tab_id = f"tab_{id(main_section)}"
-            display_tab_name = translated_name
+            frame = self.create_tab(tab_id, tab_name)
 
-            # Если вкладка с таким именем уже есть, добавляем цифру для визуала (например, Застройщик 2)
-            counter = 1
-            while display_tab_name in [btn.cget("text") for btn in self.tab_buttons.values()]:
-                display_tab_name = f"{translated_name} ({counter})"
-                counter += 1
+            # Подсчитываем количество одинаковых тегов в этой вкладке (например, чтобы понять, сколько тут Авторов)
+            tag_counts = {}
+            for tag, _ in elements:
+                tag_counts[tag] = tag_counts.get(tag, 0) + 1
+            
+            current_tag_indices = {}
 
-            if first_tab_id is None:
-                first_tab_id = tab_id
+            # Размещаем поля
+            for tag, elem in elements:
+                translated_tag = self.get_translation(tag)
+                
+                # Если это сложный тег (в нем есть другие теги), рисуем красивый заголовок
+                if len(elem) > 0:
+                    current_tag_indices[tag] = current_tag_indices.get(tag, 0) + 1
+                    
+                    # Если таких тегов несколько (например, 3 автора), нумеруем их
+                    if tag_counts[tag] > 1:
+                        header_text = f"─── {translated_tag} {current_tag_indices[tag]} ───"
+                    else:
+                        header_text = f"─── {translated_tag} ───"
+                        
+                    header = ctk.CTkLabel(
+                        frame, text=header_text, 
+                        text_color="#3a7ebf", font=("Arial", 14, "bold")
+                    )
+                    header.pack(pady=(20, 5))
 
-            # Создаем кнопку вкладки (текст - русский, а логика привязана к tab_id)
-            btn = ctk.CTkButton(
-                self.tab_bar_scroll, 
-                text=display_tab_name, 
-                fg_color="transparent", 
-                text_color=("gray10", "gray90"),
-                border_width=2,
-                border_color=("gray70", "gray30"),
-                command=lambda t_id=tab_id: self.select_tab(t_id)
-            )
-            btn.pack(side="left", padx=5, pady=5)
-            self.tab_buttons[tab_id] = btn
+                # Рисуем сами поля ввода
+                self.extract_fields(elem, frame, path_prefix="")
 
-            content_frame = ctk.CTkScrollableFrame(self.main_content_area)
-            self.tab_frames[tab_id] = content_frame
-
-            self.extract_fields(main_section, content_frame, path_prefix="")
-
+        # Активируем первую вкладку
         if first_tab_id:
             self.select_tab(first_tab_id)
 
@@ -148,7 +198,6 @@ class UniversalXMLGeneratorApp(ctk.CTk):
 
         self.tab_frames[tab_id].pack(fill="both", expand=True)
         self.tab_buttons[tab_id].configure(fg_color=["#3a7ebf", "#1f538d"])
-        
         self.active_tab_id = tab_id
 
     def extract_fields(self, xml_element, parent_ui, path_prefix=""):
@@ -156,7 +205,6 @@ class UniversalXMLGeneratorApp(ctk.CTk):
             raw_tag = xml_element.tag
             translated_tag = self.get_translation(raw_tag)
             
-            # Формируем красивую подпись: "Русское название [<АнглийскийТег>]"
             display_name = f"{path_prefix}{translated_tag} [<{raw_tag}>]"
             
             ctk.CTkLabel(parent_ui, text=display_name, text_color=("gray20", "gray80"), font=("Arial", 12, "bold")).pack(anchor="w", pady=(10, 0), padx=10)
@@ -166,7 +214,6 @@ class UniversalXMLGeneratorApp(ctk.CTk):
             if xml_element.text and xml_element.text.strip():
                 entry.insert(0, xml_element.text.strip())
 
-            # ВАЖНО: Привязываем поле к оригинальному XML-узлу
             self.entry_mappings.append({"xml_node": xml_element, "ui_entry": entry})
         else:
             for child in xml_element:
@@ -181,7 +228,6 @@ class UniversalXMLGeneratorApp(ctk.CTk):
         if not filepath: return
 
         for mapping in self.entry_mappings:
-            # Записываем текст из интерфейса обратно в оригинальный XML узел
             mapping["xml_node"].text = mapping["ui_entry"].get()
 
         xml_string = ET.tostring(self.xml_root, encoding='utf-8')
@@ -191,7 +237,7 @@ class UniversalXMLGeneratorApp(ctk.CTk):
         try:
             with open(filepath, "w", encoding="utf-8") as f:
                 f.write(pretty_xml)
-            messagebox.showinfo("Успех", "XML сохранен! В файле остались оригинальные английские теги.")
+            messagebox.showinfo("Успех", "XML сохранен с сохранением оригинальной структуры!")
         except Exception as e:
             messagebox.showerror("Ошибка", f"Не удалось сохранить файл:\n{e}")
 
